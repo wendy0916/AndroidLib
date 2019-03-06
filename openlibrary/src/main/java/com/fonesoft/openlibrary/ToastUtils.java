@@ -22,16 +22,6 @@ public class ToastUtils {
      *
      * @param toastMsg
      */
-    public void showToast(int toastMsg) {
-        mToast.setText(toastMsg);
-        mToast.show();
-    }
-
-    /**
-     * 显示toast
-     *
-     * @param toastMsg
-     */
     public void showToast(String toastMsg) {
         mToast.setText(toastMsg);
         mToast.show();
@@ -46,5 +36,15 @@ public class ToastUtils {
             mToast = null;
         }
         mToastUtils = null;
+    }
+
+    /**
+     * 显示toast
+     *
+     * @param toastMsg
+     */
+    public void showToast(int toastMsg) {
+        mToast.setText(toastMsg);
+        mToast.show();
     }
 }
